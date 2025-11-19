@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
-    --primary-color: #3b82f6;
-    --primary-hover: #2563eb;
+    --primary-color: #0066cc;
+    --primary-hover: #0052a3;
     --secondary-color: #1e293b;
     --light-bg: #f8fafc;
     --dark-bg: #0f172a;
@@ -204,6 +204,10 @@ section {
     padding: 6rem 0;
     text-align: center;
     overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1558742569-fe6d39d05837?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
 }
 
 .hero::before {
@@ -213,7 +217,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at center, rgba(59, 130, 246, 0.2), transparent);
+    background: rgba(15, 23, 42, 0.8);
     z-index: 1;
 }
 
@@ -502,6 +506,8 @@ section {
     background-color: #e2e8f0;
     border-radius: var(--border-radius);
     margin: 1rem 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="%23e2e8f0"/><circle cx="50" cy="50" r="5" fill="%230066cc"/><path d="M50,50 L60,30" stroke="%230066cc" stroke-width="2" fill="none"/></svg>');
+    background-size: cover;
 }
 
 .button-placeholder {
@@ -547,6 +553,77 @@ section {
     background-color: #f1f5f9;
     border: 1px solid #cbd5e1;
     border-radius: var(--border-radius);
+}
+
+/* Industry Specific */
+.industry-section {
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.industry-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0,0 L100,100 M20,0 L100,80 M40,0 L100,60 M60,0 L100,40 M80,0 L100,20 M0,20 L80,100 M0,40 L60,100 M0,60 L40,100 M0,80 L20,100" stroke="%23f1f5f9" stroke-width="1"/></svg>');
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.industry-content {
+    position: relative;
+    z-index: 1;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.industry-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.industry-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.industry-image {
+    height: 200px;
+    background-color: #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+.telecom-image {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="%23e2e8f0"/><path d="M50,10 L50,90" stroke="%230066cc" stroke-width="4"/><path d="M40,20 L60,20" stroke="%230066cc" stroke-width="2"/><path d="M35,30 L65,30" stroke="%230066cc" stroke-width="2"/><path d="M30,40 L70,40" stroke="%230066cc" stroke-width="2"/><circle cx="50" cy="15" r="5" fill="%230066cc"/></svg>');
+}
+
+.utility-image {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="%23e2e8f0"/><path d="M20,80 L80,80" stroke="%230066cc" stroke-width="2"/><path d="M30,80 L30,40" stroke="%230066cc" stroke-width="4"/><path d="M50,80 L50,30" stroke="%230066cc" stroke-width="4"/><path d="M70,80 L70,50" stroke="%230066cc" stroke-width="4"/><path d="M25,40 L35,40" stroke="%230066cc" stroke-width="2"/><path d="M45,30 L55,30" stroke="%230066cc" stroke-width="2"/><path d="M65,50 L75,50" stroke="%230066cc" stroke-width="2"/></svg>');
+}
+
+.construction-image {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="%23e2e8f0"/><path d="M20,80 L80,80" stroke="%230066cc" stroke-width="2"/><path d="M30,80 L30,60" stroke="%230066cc" stroke-width="4"/><path d="M30,60 L70,60" stroke="%230066cc" stroke-width="4"/><path d="M70,60 L70,80" stroke="%230066cc" stroke-width="4"/><path d="M40,60 L40,40" stroke="%230066cc" stroke-width="2"/><path d="M60,60 L60,40" stroke="%230066cc" stroke-width="2"/><path d="M35,40 L65,40" stroke="%230066cc" stroke-width="2"/></svg>');
+}
+
+.industry-content {
+    padding: 1.5rem;
+}
+
+.industry-content h3 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 /* Steps */

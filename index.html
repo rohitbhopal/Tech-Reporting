@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Field Job Management & Reporting App</title>
+    <title>Field Service Management System</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -32,12 +32,12 @@
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <span class="badge">Manus App Builder</span>
+                <span class="badge">Field Service Solution</span>
                 <h1>Field Job Management & Reporting</h1>
-                <p class="hero-description">A complete solution for managing field technicians, job assignments, and report submissions with location tracking and photo uploads.</p>
+                <p class="hero-description">A complete solution for managing field technicians, work orders, and report submissions with location tracking and photo uploads.</p>
                 <div class="button-group">
-                    <a href="downloads/manus_app_command.json" download class="button primary">
-                        <i class="fas fa-download"></i> Download Manus-Ready File
+                    <a href="downloads/field_service_app.json" download class="button primary">
+                        <i class="fas fa-download"></i> Download Demo Files
                     </a>
                     <a href="#documentation" class="button secondary">
                         View Documentation
@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Streamline Your Field Operations</h2>
-                    <p>Manage your entire field service workflow from job assignment to completion reporting in one integrated platform.</p>
+                    <p>Manage your entire field service workflow from work order assignment to completion reporting in one integrated platform.</p>
                 </div>
                 <div class="overview-grid">
                     <div class="overview-item">
@@ -84,7 +84,7 @@
                             <i class="fas fa-bell"></i>
                         </div>
                         <h3>Smart Notifications</h3>
-                        <p>Automated alerts for job assignments, status updates, and deadline reminders.</p>
+                        <p>Automated alerts for work orders, status updates, and deadline reminders.</p>
                     </div>
                 </div>
             </div>
@@ -100,13 +100,13 @@
                 <div class="card-grid">
                     <div class="card">
                         <div class="card-header">
-                            <h3><i class="fas fa-users"></i> Technician</h3>
-                            <p>Field workers performing jobs</p>
+                            <h3><i class="fas fa-users"></i> Field Technician</h3>
+                            <p>On-site workers performing service tasks</p>
                         </div>
                         <div class="card-content">
                             <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> View assigned jobs and clock in/out</li>
-                                <li><i class="fas fa-check-circle"></i> Submit reports with photos and signatures</li>
+                                <li><i class="fas fa-check-circle"></i> View assigned work orders and clock in/out</li>
+                                <li><i class="fas fa-check-circle"></i> Submit reports with before/after photos</li>
                                 <li><i class="fas fa-check-circle"></i> Track work hours with timesheets</li>
                                 <li><i class="fas fa-check-circle"></i> Receive real-time notifications</li>
                                 <li><i class="fas fa-check-circle"></i> Access job history and documentation</li>
@@ -115,12 +115,12 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <h3><i class="fas fa-clipboard-check"></i> Lead</h3>
+                            <h3><i class="fas fa-clipboard-check"></i> Field Supervisor</h3>
                             <p>Team managers overseeing work</p>
                         </div>
                         <div class="card-content">
                             <ul class="feature-list">
-                                <li><i class="fas fa-check-circle"></i> Assign jobs to technicians</li>
+                                <li><i class="fas fa-check-circle"></i> Assign work orders to technicians</li>
                                 <li><i class="fas fa-check-circle"></i> Monitor team performance and job status</li>
                                 <li><i class="fas fa-check-circle"></i> View and export all reports</li>
                                 <li><i class="fas fa-check-circle"></i> Manage schedules and priorities</li>
@@ -130,7 +130,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <h3><i class="fas fa-cog"></i> Admin</h3>
+                            <h3><i class="fas fa-cog"></i> Operations Manager</h3>
                             <p>System administrators with full access</p>
                         </div>
                         <div class="card-content">
@@ -151,14 +151,14 @@
         <section id="features" class="features-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>App Details</h2>
+                    <h2>System Features</h2>
                     <p>Everything you need to manage field jobs efficiently.</p>
                 </div>
                 <div class="tabs">
                     <div class="tab-header">
                         <button class="tab-button active" data-tab="features">Features</button>
                         <button class="tab-button" data-tab="screens">Screens</button>
-                        <button class="tab-button" data-tab="entities">Entities</button>
+                        <button class="tab-button" data-tab="entities">Data Structure</button>
                     </div>
                     <div class="tab-content">
                         <div class="tab-pane active" id="features">
@@ -173,7 +173,7 @@
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3><i class="fas fa-camera"></i> Photo Uploads</h3>
+                                        <h3><i class="fas fa-camera"></i> Photo Documentation</h3>
                                     </div>
                                     <div class="card-content">
                                         <p>Capture before and after photos for job documentation and quality assurance.</p>
@@ -189,10 +189,10 @@
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3><i class="fas fa-file-export"></i> Export Reports</h3>
+                                        <h3><i class="fas fa-file-export"></i> Work Order Management</h3>
                                     </div>
                                     <div class="card-content">
-                                        <p>Generate PDF reports with photos, signatures, and job details for clients and records.</p>
+                                        <p>Create, assign, and track work orders with detailed instructions and customer information.</p>
                                     </div>
                                 </div>
                                 <div class="card">
@@ -222,15 +222,15 @@
                                     <div class="card-content">
                                         <p>Custom dashboards for each role with relevant information and quick actions.</p>
                                         <ul class="small-list">
-                                            <li>• Technician: Today's jobs and clock in/out</li>
-                                            <li>• Lead: Team overview and job assignment</li>
-                                            <li>• Admin: User management and system overview</li>
+                                            <li>• Technician: Today's work orders and clock in/out</li>
+                                            <li>• Supervisor: Team overview and job assignment</li>
+                                            <li>• Manager: User management and system overview</li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3>Job Details Screen</h3>
+                                        <h3>Work Order Details</h3>
                                     </div>
                                     <div class="card-content">
                                         <p>Comprehensive job information with instructions, location map, photo upload, status updates, and signature capture.</p>
@@ -261,13 +261,13 @@
                                         <h3>Users</h3>
                                     </div>
                                     <div class="card-content">
-                                        <p>User accounts with role-based permissions (Technician, Lead, Admin).</p>
+                                        <p>User accounts with role-based permissions (Technician, Supervisor, Manager).</p>
                                         <p class="small-text">Fields: Name, Role, Email/Phone, Password</p>
                                     </div>
                                 </div>
                                 <div class="card">
                                     <div class="card-header">
-                                        <h3>Jobs</h3>
+                                        <h3>Work Orders</h3>
                                     </div>
                                     <div class="card-content">
                                         <p>Job assignments with location, instructions, and status tracking.</p>
@@ -280,7 +280,7 @@
                                     </div>
                                     <div class="card-content">
                                         <p>Job completion reports with photos, notes, and signatures.</p>
-                                        <p class="small-text">Fields: Job Reference, Photos, Notes, Signature, Submitted by, Geo-tag, Timestamp</p>
+                                        <p class="small-text">Fields: Work Order Reference, Photos, Notes, Signature, Submitted by, Geo-tag, Timestamp</p>
                                     </div>
                                 </div>
                                 <div class="card">
@@ -289,7 +289,7 @@
                                     </div>
                                     <div class="card-content">
                                         <p>Work hour tracking for technicians with job references.</p>
-                                        <p class="small-text">Fields: Technician, Clock In/Out Time, Job Reference</p>
+                                        <p class="small-text">Fields: Technician, Clock In/Out Time, Work Order Reference</p>
                                     </div>
                                 </div>
                             </div>
@@ -303,8 +303,8 @@
         <section class="screenshots-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>App Screenshots</h2>
-                    <p>See the app in action with these interface previews.</p>
+                    <h2>System Screenshots</h2>
+                    <p>See the application in action with these interface previews.</p>
                 </div>
                 <div class="screenshots-container">
                     <div class="screenshot">
@@ -312,30 +312,30 @@
                             <div class="phone-screen technician-dashboard">
                                 <div class="screen-content">
                                     <div class="screen-header">
-                                        <h4>Today's Jobs</h4>
+                                        <h4>Today's Work Orders</h4>
                                     </div>
                                     <div class="job-list">
                                         <div class="job-item">
                                             <div class="job-time">9:00 AM</div>
                                             <div class="job-info">
-                                                <h5>HVAC Repair</h5>
-                                                <p>123 Main St, Suite 4B</p>
+                                                <h5>Tower Inspection</h5>
+                                                <p>123 Main St, Cell Site #4B</p>
                                             </div>
                                             <div class="job-status to-do">To-Do</div>
                                         </div>
                                         <div class="job-item">
                                             <div class="job-time">11:30 AM</div>
                                             <div class="job-info">
-                                                <h5>Electrical Inspection</h5>
-                                                <p>456 Oak Ave</p>
+                                                <h5>Equipment Installation</h5>
+                                                <p>456 Oak Ave, Tower #23</p>
                                             </div>
                                             <div class="job-status to-do">To-Do</div>
                                         </div>
                                         <div class="job-item">
                                             <div class="job-time">2:00 PM</div>
                                             <div class="job-info">
-                                                <h5>Plumbing Service</h5>
-                                                <p>789 Pine Rd</p>
+                                                <h5>Signal Testing</h5>
+                                                <p>789 Pine Rd, Sector 3</p>
                                             </div>
                                             <div class="job-status to-do">To-Do</div>
                                         </div>
@@ -350,13 +350,13 @@
                             <div class="phone-screen job-details">
                                 <div class="screen-content">
                                     <div class="screen-header">
-                                        <h4>Job Details</h4>
+                                        <h4>Work Order Details</h4>
                                     </div>
                                     <div class="job-detail-content">
-                                        <h5>HVAC Repair</h5>
+                                        <h5>Tower Inspection</h5>
                                         <div class="detail-item">
                                             <i class="fas fa-map-marker-alt"></i>
-                                            <p>123 Main St, Suite 4B</p>
+                                            <p>123 Main St, Cell Site #4B</p>
                                         </div>
                                         <div class="detail-item">
                                             <i class="fas fa-clock"></i>
@@ -364,7 +364,7 @@
                                         </div>
                                         <div class="detail-item">
                                             <i class="fas fa-info-circle"></i>
-                                            <p>AC unit not cooling properly. Check refrigerant levels and clean filters.</p>
+                                            <p>Perform routine inspection of tower equipment. Check signal strength and connectivity. Document any visible damage.</p>
                                         </div>
                                         <div class="map-placeholder"></div>
                                         <div class="button-placeholder">Start Job</div>
@@ -372,7 +372,7 @@
                                 </div>
                             </div>
                         </div>
-                        <h4>Job Details</h4>
+                        <h4>Work Order Details</h4>
                     </div>
                     <div class="screenshot">
                         <div class="phone-frame">
@@ -418,35 +418,35 @@
             <div class="container">
                 <div class="section-header">
                     <h2>How It Works</h2>
-                    <p>Simple implementation with the Manus no-code AI app builder.</p>
+                    <p>Simple implementation for your field service operations.</p>
                 </div>
                 <div class="steps">
                     <div class="step">
                         <div class="step-number">1</div>
                         <div class="step-content">
-                            <h3>Download the Manus-Ready File</h3>
-                            <p>Get the complete JSON configuration file with all entities, screens, and features pre-configured.</p>
+                            <h3>Create Work Orders</h3>
+                            <p>Create detailed work orders with specific locations, time slots, and task instructions.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
                         <div class="step-content">
-                            <h3>Import into Manus</h3>
-                            <p>Log in to your Manus account, create a new app project, and import the JSON file.</p>
+                            <h3>Assign to Technicians</h3>
+                            <p>Assign work orders to available technicians based on skills, location, and schedule.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
                         <div class="step-content">
-                            <h3>Customize (Optional)</h3>
-                            <p>Modify branding, fields, and layouts to match your specific business needs.</p>
+                            <h3>Complete Field Work</h3>
+                            <p>Technicians navigate to locations, complete tasks, and document with photos.</p>
                         </div>
                     </div>
                     <div class="step">
                         <div class="step-number">4</div>
                         <div class="step-content">
-                            <h3>Deploy and Use</h3>
-                            <p>Deploy your app, create user accounts, and start managing field jobs efficiently.</p>
+                            <h3>Submit Reports</h3>
+                            <p>Submit detailed reports with before/after photos, notes, and customer signatures.</p>
                         </div>
                     </div>
                 </div>
@@ -463,7 +463,7 @@
                 <div class="testimonials-container">
                     <div class="testimonial">
                         <div class="testimonial-content">
-                            <p>"This app has completely transformed how we manage our field technicians. The real-time tracking and report submission features have increased our efficiency by over 30%."</p>
+                            <p>"This system has completely transformed how we manage our field technicians. The real-time tracking and report submission features have increased our efficiency by over 30%."</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">
@@ -471,7 +471,7 @@
                             </div>
                             <div class="author-info">
                                 <h4>Sarah Johnson</h4>
-                                <p>Operations Manager, TechServe Inc.</p>
+                                <p>Operations Manager, TelecomServe Inc.</p>
                             </div>
                         </div>
                     </div>
@@ -485,13 +485,13 @@
                             </div>
                             <div class="author-info">
                                 <h4>Michael Rodriguez</h4>
-                                <p>Field Service Director, ElectroPro</p>
+                                <p>Field Service Director, NetworkPro</p>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial">
                         <div class="testimonial-content">
-                            <p>"As an admin, I appreciate how easy it is to manage users and permissions. The reporting features give us valuable insights into our operations that we never had before."</p>
+                            <p>"As a manager, I appreciate how easy it is to manage users and permissions. The reporting features give us valuable insights into our operations that we never had before."</p>
                         </div>
                         <div class="testimonial-author">
                             <div class="author-avatar">
@@ -499,7 +499,7 @@
                             </div>
                             <div class="author-info">
                                 <h4>David Chen</h4>
-                                <p>IT Manager, BuildRight Construction</p>
+                                <p>IT Manager, TowerTech Solutions</p>
                             </div>
                         </div>
                     </div>
@@ -512,20 +512,20 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Documentation</h2>
-                    <p>Download comprehensive documentation to help you implement and customize your app.</p>
+                    <p>Download comprehensive documentation to help you implement and customize your system.</p>
                 </div>
                 <div class="card-grid">
                     <div class="card">
                         <div class="card-header">
-                            <h3><i class="fas fa-file-code"></i> Manus-Ready JSON File</h3>
-                            <p>Complete app configuration file</p>
+                            <h3><i class="fas fa-file-code"></i> System Configuration</h3>
+                            <p>Complete system configuration file</p>
                         </div>
                         <div class="card-content">
-                            <p>The ready-to-import JSON file containing all entities, screens, and features for your Field Job Management app.</p>
+                            <p>The ready-to-import configuration file containing all entities, screens, and features for your Field Service Management system.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="downloads/manus_app_command.json" download class="button primary full-width">
-                                <i class="fas fa-download"></i> Download JSON
+                            <a href="downloads/field_service_app.json" download class="button primary full-width">
+                                <i class="fas fa-download"></i> Download Config
                             </a>
                         </div>
                     </div>
@@ -535,7 +535,7 @@
                             <p>Step-by-step instructions</p>
                         </div>
                         <div class="card-content">
-                            <p>Detailed guide on how to import, customize, and deploy your Field Job Management app using Manus.</p>
+                            <p>Detailed guide on how to import, customize, and deploy your Field Service Management system.</p>
                         </div>
                         <div class="card-footer">
                             <a href="downloads/implementation_guide.md" download class="button secondary full-width">
@@ -546,10 +546,10 @@
                     <div class="card">
                         <div class="card-header">
                             <h3><i class="fas fa-file-alt"></i> Requirements Analysis</h3>
-                            <p>Detailed app requirements</p>
+                            <p>Detailed system requirements</p>
                         </div>
                         <div class="card-content">
-                            <p>Comprehensive analysis of user roles, entities, screens, and features included in the app.</p>
+                            <p>Comprehensive analysis of user roles, entities, screens, and features included in the system.</p>
                         </div>
                         <div class="card-footer">
                             <a href="downloads/requirements_analysis.md" download class="button secondary full-width">
@@ -559,7 +559,7 @@
                     </div>
                     <div class="card">
                         <div class="card-header">
-                            <h3><i class="fas fa-file-alt"></i> App Structure Design</h3>
+                            <h3><i class="fas fa-file-alt"></i> System Architecture</h3>
                             <p>Technical architecture details</p>
                         </div>
                         <div class="card-content">
@@ -577,7 +577,7 @@
                             <p>Quality assurance verification</p>
                         </div>
                         <div class="card-content">
-                            <p>Verification report confirming that all requirements are met and the app structure is valid and complete.</p>
+                            <p>Verification report confirming that all requirements are met and the system structure is valid and complete.</p>
                         </div>
                         <div class="card-footer">
                             <a href="downloads/validation_report.md" download class="button secondary full-width">
@@ -594,61 +594,61 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Frequently Asked Questions</h2>
-                    <p>Get answers to common questions about the Field Job Management app.</p>
+                    <p>Get answers to common questions about the Field Service Management system.</p>
                 </div>
                 <div class="faq-container">
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>What is the Manus AI App Builder?</h3>
+                            <h3>How does the location tracking work?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Manus is a no-code platform that allows you to build custom mobile and web applications without writing any code. It uses AI to help you design and implement complex business applications quickly and efficiently.</p>
+                            <p>The system uses GPS technology to track technician locations in real-time. Location data is captured when technicians check in to a job site, submit reports, or manually update their status. This information is displayed on interactive maps for supervisors and managers.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Do I need programming skills to use this app?</h3>
+                            <h3>Do I need programming skills to use this system?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>No programming skills are required. The Manus-ready JSON file contains all the necessary configuration, and the Manus platform provides a visual interface for any customizations you might want to make.</p>
+                            <p>No programming skills are required. The system is designed with a user-friendly interface that allows administrators to configure workflows, create forms, and manage users without any coding knowledge.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Can I customize the app to match my business needs?</h3>
+                            <h3>Can I customize the system to match my business needs?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes, the app is fully customizable. You can modify field names, add or remove features, change the branding, and adjust workflows to match your specific business processes using the Manus platform.</p>
+                            <p>Yes, the system is fully customizable. You can modify field names, add or remove features, change the branding, and adjust workflows to match your specific business processes using the administration panel.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Does the app work offline?</h3>
+                            <h3>Does the system work offline?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes, the app includes offline functionality. Technicians can continue working without an internet connection, and all data will automatically synchronize when they're back online.</p>
+                            <p>Yes, the system includes offline functionality. Technicians can continue working without an internet connection, and all data will automatically synchronize when they're back online. This is especially useful for remote locations with poor connectivity.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>How secure is the data in the app?</h3>
+                            <h3>How secure is the data in the system?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>The app uses industry-standard security practices including encrypted data storage, secure authentication, and role-based access controls to ensure your data remains protected.</p>
+                            <p>The system uses industry-standard security practices including encrypted data storage, secure authentication, and role-based access controls to ensure your data remains protected. All communications between the mobile app and servers are encrypted.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <div class="faq-question">
-                            <h3>Can I integrate this app with other business systems?</h3>
+                            <h3>Can I integrate this system with other business systems?</h3>
                             <i class="fas fa-chevron-down"></i>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes, the Manus platform supports integration with various business systems through its API capabilities. You can connect to CRM systems, accounting software, and other tools to create a seamless workflow.</p>
+                            <p>Yes, the system supports integration with various business systems through its API capabilities. You can connect to CRM systems, accounting software, inventory management, and other tools to create a seamless workflow.</p>
                         </div>
                     </div>
                 </div>
@@ -702,10 +702,10 @@
         <section class="cta-section">
             <div class="container">
                 <h2>Ready to Get Started?</h2>
-                <p>Download the Manus-ready file and documentation to implement your Field Job Management app today.</p>
+                <p>Download the documentation and configuration files to implement your Field Service Management system today.</p>
                 <div class="button-group">
-                    <a href="downloads/manus_app_command.json" download class="button primary">
-                        <i class="fas fa-download"></i> Download Manus-Ready File
+                    <a href="downloads/field_service_app.json" download class="button primary">
+                        <i class="fas fa-download"></i> Download Demo Files
                     </a>
                     <a href="#documentation" class="button secondary">
                         View Documentation
@@ -754,8 +754,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Field Job Management and Reporting App © <span id="current-year"></span></p>
-                <p class="small-text">Built with Manus AI App Builder</p>
+                <p>Field Service Management System © <span id="current-year"></span></p>
+                <p class="small-text">Empowering field teams with modern technology</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
